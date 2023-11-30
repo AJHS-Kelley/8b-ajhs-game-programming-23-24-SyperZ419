@@ -121,3 +121,6 @@ criticalHit(skillUsed, 23)
 playerDamage = damageCalc(skillUsed, 45)
 playerHealth -= playerDamage
 gameOver(playerHealth)
+
+
+# Code Review by Noah Mulder
