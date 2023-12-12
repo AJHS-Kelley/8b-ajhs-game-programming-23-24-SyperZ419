@@ -1,4 +1,4 @@
-# Object-Oriented Programming, Xavier Oliver, v0.0
+# Object-Oriented Programming, Xavier Oliver, v0.1
 class Person: # Use PascalCase for ClassNames
     def __init__(self, name, age, weight):
         self.name = name
