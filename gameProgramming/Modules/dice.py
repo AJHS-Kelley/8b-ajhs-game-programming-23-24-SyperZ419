@@ -34,3 +34,4 @@ def isExploding(roll, sizeDice):
     else:
         isExploding = False
     return isExploding
+
