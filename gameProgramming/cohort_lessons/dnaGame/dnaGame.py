@@ -1,4 +1,4 @@
-# DNA Replication Game, Ryan Kelley, v0.3
+# DNA Replication Game, Ryan Kelley, v0.4
 
 # Import Entire Modules -- Get the whole toolbox.
 import time, datetime
@@ -58,6 +58,46 @@ def verifySequence(dnaSequence: str, rnaSequence: str) -> bool:
 
     return isMatch
 
+def calcScore(rnaSequence: str, rnaTime: float) -> int:
+    score = 0
+    if rnaTime < 3.0:
+        score += 30
+    elif rnaTime < 5.0:
+        score += 25
+    elif rnaTime < 10.0:
+        score += 20
+    elif rnaTime < 15.0:
+        score += 15
+    elif rnaTime < 20.0:
+        score += 10
+    else:
+        score += 5
+    
+    scoreMulti = 0.0
+    if len(rnaSequence) >= 35:
+        scoreMulti = 5.0
+    elif len(rnaSequence) >= 30:
+        scoreMulti = 4.5
+    elif len(rnaSequence) >= 25:
+        scoreMulti = 4.0
+    elif len(rnaSequence) >= 20:
+        scoreMulti = 3.5
+    elif len(rnaSequence) >= 15:
+        scoreMulti = 3.0
+    elif len(rnaSequence) >= 10:
+        scoreMulti = 2.0
+    elif len(rnaSequence) >= 5:
+        scoreMulti = 1.0
+    elif len(rnaSequence) >= 4:
+        scoreMulti = 0.5
+    elif len(rnaSequence) >= 3:
+        scoreMulti = 0.25
+    else:
+        scoreMulti = 0.125
+    score *= scoreMulti
+    return score
+
 dna = genDNA()
 rna = doTranscription(dna)
 print(verifySequence(dna, rna[0]))
+print(calcScore(rna[0], rna[1]))
