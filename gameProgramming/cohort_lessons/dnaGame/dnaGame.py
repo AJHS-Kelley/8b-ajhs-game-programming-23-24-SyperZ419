@@ -97,7 +97,7 @@ def calcScore(rnaSequence: str, rnaTime: float) -> int:
     score *= scoreMulti
     return score
 
-def saveScore(dnaSequence: str, rnaSequence: str, rnaTime: float) -> None:
+def saveScore(dnaSequence: str, rnaSequence: str, rnaTime: float, score: int) -> None:
     playerName = input("What is your first name?\n")
     lastName = input("What is your last name?\n")
     fullName = playerName + " " + lastName
@@ -110,9 +110,13 @@ def saveScore(dnaSequence: str, rnaSequence: str, rnaTime: float) -> None:
     # "a" mode -- CREATE FILE, IF FILE EXISTS, APPEND TO IT
     saveData.write(f"DNA Sequence: {dnaSequence}\nRNA Sequence: {rnaSequence}\n")
     saveData.write(f"Transcription Time: {rnaTime}\n")
-    
+    saveData.write(f"Score: {score}\n")
+    saveData.write(f"{fullName}\n")
+    saveData.write(f"{datetime.datetime.now()}\n")
+    saveData.close()
 
 dna = genDNA()
 rna = doTranscription(dna)
-print(verifySequence(dna, rna[0]))
-print(calcScore(rna[0], rna[1]))
+if verifySequence(dna, rna[0]):
+    score = (calcScore(rna[0], rna[1]))
+    saveScore(dna, rna[0], rna[1], score)
