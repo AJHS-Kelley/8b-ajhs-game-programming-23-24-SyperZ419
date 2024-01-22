@@ -24,7 +24,6 @@ def genDNA() -> str:
     
     return dnaSequence
 
-dna = genDNA()
 
 def doTranscription(dnaSequence: str) -> tuple:
     print(f"The DNA Sequence is {dnaSequence}.\n")
@@ -32,6 +31,8 @@ def doTranscription(dnaSequence: str) -> tuple:
     print('Please remember, in the RNA sequence, U pairs with A from the DNA sequence.\n')
     rnaStart = time.time() # time.time() returns the number of seconds since 00:00:00 UTC Jan. 01, 1970
     rnaSequence = input("Please enter the matching RNA sequence. Leave no spaces! Then press Enter.\n").upper()
+    if "augc" or "AUGC" not in rnaSequence:
+        print("The input sequence does not have correct RNA bases.")
     rnaStop = time.time()
     rnaTime = rnaStop - rnaStart
     return (rnaSequence, rnaTime)
