@@ -1,4 +1,4 @@
-# Number Slider, Xavier Oliver, based on a project by Al Sweigart, v0.0 
+# Number Slider, Xavier Oliver, based on a project by Al Sweigart, v0.4
 
 import sys, random, pygame
 # sys module provides access to system resources (i.e. Operating System Commands)
@@ -30,3 +30,7 @@ TEXTCOLOR = WHITE
 BORDERCOLOR = BRIGHTBLUE
 BASICFONTSIZE = 20 # pixels
 
+# BUTTON SETUP
+BUTTONCOLOR = WHITE
+BUTTONTEXTCOLOR = BLACK
+MESSAGECOLOR = WHITE
