@@ -6,6 +6,7 @@ pygame.display.set_caption("Runner")
 clock = pygame.time.Clock()
 
 testSurface = pygame.Surface((100,200))
+testSurface.fill("Red")
 
 while True:
     for event in pygame.event.get():
@@ -13,7 +14,7 @@ while True:
             pygame.quit()
             exit()
 
-    screen.blit(testSurface,(0,0))
+    screen.blit(testSurface,(200,100))
 
     pygame.display.update()
     clock.tick(60)
