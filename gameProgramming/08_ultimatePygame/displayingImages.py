@@ -5,8 +5,8 @@ screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption("Runner")
 clock = pygame.time.Clock()
 
-testSurface = pygame.Surface((100,200))
-testSurface.fill("Red")
+skySurface = pygame.image.load("img/ultimatePygame/Sky.png")
+groundSurface = pygame.image.load("img/ultimatePygame/Ground.png")
 
 while True:
     for event in pygame.event.get():
@@ -14,7 +14,8 @@ while True:
             pygame.quit()
             exit()
 
-    screen.blit(testSurface,(200,100))
+    screen.blit(skySurface,(0, 0))
+    screen.blit(groundSurface,(0, 0))
 
     pygame.display.update()
     clock.tick(60)
