@@ -6,8 +6,8 @@ pygame.display.set_caption("Runner")
 clock = pygame.time.Clock()
 testFont = pygame.font.Font(None, 50)
 
-skySurface = pygame.image.load("img/ultimatePygame/Sky.jpg")
-groundSurface = pygame.image.load("img/ultimatePygame/Ground.jpg")
+skySurface = pygame.image.load("img/ultimatePygame/graphics/gky.jpg")
+groundSurface = pygame.image.load("img/ultimatePygame/graphics/ground.jpg")
 textSurface = testFont.render("My game", False, "Black")
 
 snailSurface = pygame.image.load("img/ultimatePygame/Snail.jpg")
