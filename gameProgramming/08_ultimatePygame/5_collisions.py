@@ -34,6 +34,12 @@ while True:
     screen.blit(snailSurface,snailRect)
     playerRect.left 
     screen.blit(playerSurface,playerRect)
-    
+
+    if playerRect.colliderect(snailRect):
+        print("collision")
+
+    mousePos = pygame.mouse.get_pos
+    if playerRect.collidepoint(mousePos):
+        
     pygame.display.update()
     clock.tick(60)
