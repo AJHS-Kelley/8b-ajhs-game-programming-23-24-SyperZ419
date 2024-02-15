@@ -1,5 +1,7 @@
 import pygame
 
+# Almost done, get it finished please! 
+
 pygame.init()
 screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption("Runner")
