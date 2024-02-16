@@ -34,7 +34,7 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and playerRect.bottom >= 300:
                 playerGravity = -20
-    
+
     
     screen.blit(skySurface,(0,0))
     screen.blit(groundSurface,(0,300))
@@ -54,6 +54,7 @@ while True:
         playerRect.bottom = 300
     screen.blit(playerSurface,playerRect)
 
-    
+
+
     pygame.display.update()
     clock.tick(60)
