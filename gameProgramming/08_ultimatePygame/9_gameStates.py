@@ -54,7 +54,9 @@ while True:
         playerRect.bottom = 300
     screen.blit(playerSurface,playerRect)
 
-
+    if snailRect.colliderect(playerRect):
+        pygame.quit()
+        exit()
 
     pygame.display.update()
     clock.tick(60)
