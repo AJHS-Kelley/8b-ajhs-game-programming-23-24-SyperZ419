@@ -34,7 +34,7 @@ while True:
     screen.blit(groundSurface,(0,300))
     pygame.draw.rect(screen, "#c0e8ec", scoreRect)
     pygame.draw.rect(screen, "#c0e8ec", scoreRect, 10)
-    pygame.draw.ellipse(screen, "Brown", pygame.Rect(50,200,100,100))
+    #pygame.draw.ellipse(screen, "Brown", pygame.Rect(50,200,100,100))
     #pygame.draw.line(screen,'Gold',(0,0),pygame.mouse.get_pos(),10)  
     screen.blit(scoreSurface,scoreRect)
 
