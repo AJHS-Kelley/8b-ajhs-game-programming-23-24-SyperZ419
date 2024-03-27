@@ -1,0 +1,25 @@
+Game Genre: 
+    •	Turn Based Roleplaying Game
+Game Theme: 
+    •	Fantasy - Dungeon or Tower
+Player Challenge: 
+    •	Managing resources, Strategizing based on turn order
+Win Con: 
+    •	Defeat the final boss of the dungeon/tower
+Lose Con:
+    •	Run out of health before beating the boss
+Difficulty Challenges:
+    •	More enemies per room
+    •	Enemies start with more mp
+    •	Less items available
+    •	Higher mp costs
+Game Objects:
+    •	Random encounters (encounter rate, enemies encountered)
+    •	Skill effects (mp requirements)
+    •	Item effects
+    •	Enemy AI (attack patterns)
+Control Scheme:
+    •	WASD or arrow keys to move
+    •	I to select
+    •	O to go back
+    •	ENTER to open menu
