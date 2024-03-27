@@ -2,7 +2,7 @@ Game Genre:
     •	Turn Based Roleplaying Game
 
 Game Theme: 
-    •	Fantasy - Dungeon or Tower
+    •	Ancient Japan
 
 Player Challenge: 
     •	Managing resources, Strategizing based on turn order
@@ -14,16 +14,17 @@ Lose Con:
     •	Run out of health before beating the boss
 
 Screens:
-    •	Two floors of  a tower
+    •	Two floors of the tower
+
+Obstacles:
+    •	Enemies (skeletons, Oni, tengu, kappa, umi bozu, Ushi Oni, gashodokuro, tsuchigumo)
 
 Difficulty Challenges:
     •	More enemies per room
     •	Enemies start with more mp
     •	Less items available
     •	Higher mp costs
-
-Obstacles:
-    •	Enemies (skeletons, Oni, tengu, kappa, daidarabotchi, Ushi Oni, tsuchinoko, gashodokuro, tsuchigumo)
+    •	More random encounters
 
 Game Objects:
     •	Random encounters (encounter rate, enemies encountered)
