@@ -1,23 +1,36 @@
 Game Genre: 
     •	Turn Based Roleplaying Game
+
 Game Theme: 
     •	Fantasy - Dungeon or Tower
+
 Player Challenge: 
     •	Managing resources, Strategizing based on turn order
+
 Win Con: 
-    •	Defeat the final boss of the dungeon/tower
+    •	Defeat the final boss of the tower
+
 Lose Con:
     •	Run out of health before beating the boss
+
+Screens:
+    •	Two floors of  a tower
+
 Difficulty Challenges:
     •	More enemies per room
     •	Enemies start with more mp
     •	Less items available
     •	Higher mp costs
+
+Obstacles:
+    •	Enemies (skeletons, Oni, tengu, kappa, daidarabotchi, Ushi Oni, tsuchinoko, gashodokuro, tsuchigumo)
+
 Game Objects:
     •	Random encounters (encounter rate, enemies encountered)
     •	Skill effects (mp requirements)
     •	Item effects
     •	Enemy AI (attack patterns)
+
 Control Scheme:
     •	WASD or arrow keys to move
     •	I to select
