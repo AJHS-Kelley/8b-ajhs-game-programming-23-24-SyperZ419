@@ -11,7 +11,7 @@ if a >= b:
 if b >= c:
     b, c = c, b
 if b <= a:
-    a, b = b, c
+    a, b = b, a
 #print(f"a: {a}, b: {b}, c: {c}")
 
 # input string variable
