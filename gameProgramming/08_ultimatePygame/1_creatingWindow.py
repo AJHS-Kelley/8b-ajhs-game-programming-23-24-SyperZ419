@@ -10,7 +10,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
-    # draw all elaments
+    # draw all elements
     # update everything
     pygame.display.update()
     clock.tick(60)
