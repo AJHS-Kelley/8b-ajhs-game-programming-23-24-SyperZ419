@@ -18,7 +18,10 @@ if difficulty == 1:
     pygame.display.set_caption('Name - Normal Mode')
 else:
     pygame.display.set_caption('Name - Hard Mode')
-    
+
+skySurface = pygame.image.load("img/ultimatePygame/Sky.jpg")
+groundSurface = pygame.image.load("img/ultimatePygame/Ground.jpg")
+textSurface = testFont.render("My game", False, "Green")
 screen = pygame.display.set_mode((x, y))
 clock = pygame.time.Clock()
 while True:
