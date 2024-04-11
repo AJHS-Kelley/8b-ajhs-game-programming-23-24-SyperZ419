@@ -11,17 +11,16 @@ else:
     y = 1080
 
 pygame.init()
-
+titleFont = pygame.font.Font("font/IMFellEnglish-Italic.ttf", 50)
 difficulty = int(input("Please choose a difficulty. Enter 1 for Normal. Enter 2 for Hard.\n"))
 
 if difficulty == 1:
-    pygame.display.set_caption('Name - Normal Mode')
+    pygame.display.set_caption('Generic RPG - Normal Mode')
 else:
-    pygame.display.set_caption('Name - Hard Mode')
+    pygame.display.set_caption('Generic RPG - Hard Mode')
 
-skySurface = pygame.image.load("img/ultimatePygame/Sky.jpg")
-groundSurface = pygame.image.load("img/ultimatePygame/Ground.jpg")
-textSurface = testFont.render("My game", False, "Green")
+titleBackground = pygame.image.load("img/finalProject/backgrounds/backgrounds/2.png")
+textSurface = titleFont.render("Generic RPG", False, "Black")
 screen = pygame.display.set_mode((x, y))
 clock = pygame.time.Clock()
 while True:
@@ -29,5 +28,9 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
+
+
+    screen.blit(titleBackground,(0,0))
+
     pygame.display.update()
     clock.tick(60)
